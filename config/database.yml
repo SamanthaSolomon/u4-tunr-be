@@ -80,7 +80,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: tunr_api_production
-  username: tunr_api
-  password: <%= ENV['TUNR_API_DATABASE_PASSWORD'] %>
+   url: <%= ENV['MY_APP_DATABASE_URL'] %>
